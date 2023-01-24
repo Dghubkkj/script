@@ -13,7 +13,7 @@ _G.CrawlSpeed = true
 --funcao
 function CrawlSpeed()
         while _G.CrawlSpeed == true do
-             local Events = game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+             local Events = game:GetService("Players").LocalPlayer.Character.LocalPlayerScript
              Event:InvokeServer()
              wait(0.1000000001)
              
